@@ -1,45 +1,74 @@
+html, body{
+	height:100%;
+}
 
 body	{
 	max-width:100%;
-		background: #5affb7;
-		color: #000000;
-;
-	}
+	background: #white;
+	color: #000000;
+}
 
+
+li {
+    float: block;
+    list-style: none;
+}
+
+a {
+    display: absolute;
+    width: 40px;
+    font-family: 'Montserrat'; 
+    font-weight: 400;
+   	font-size: 15px;
+	line-height: 24px;
+	letter-spacing: 0.4px;
+	color: #000000;
+	cursor: pointer;
+	text-decoration: none;
+
+
+}
 
 
 
 h1 {
-	font-size: 21px;
-	font-family: 'Source Code Pro'; font-weight: 600;	
-	line-height: 28px;
-	letter-spacing: 0.5px;
-	width: 80%;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 32px;
+	letter-spacing: 1,2px;
+	width: 60%;
+	top: 0%;
 	}	
 
 
 
 h2 {
-	font-family: 'Source Code Pro'; font-weight: 500;
-	font-size: 19px;
-	line-height: 60px;
-	letter-spacing: 0.7px;
+	font-family: 'Montserrat', sans-serif;	
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 35px;
+	letter-spacing: 0.9px;
 
 
 }		
 
 h3 {
-	font-size: 15px;
-	font-family: 'Source Code Pro'; font-weight: 300;	
-	line-height: 26px;
-	letter-spacing: 0.8px;
+	font-size: 14px;
+	font-family: 'Source Code Pro'; 
+	font-weight: 400;	
+	line-height: 22px;
+	letter-spacing: 0.6px;
+	
+
 
 }
 
 
 h4 {
 	font-size: 15px;
-	font-family: 'Source Code Pro'; font-weight: 500;
+	font-family: 'Montserrat', sans-serif;	
+	font-weight: 400;
 	line-height: 20px;
 	letter-spacing: 0.7px;
 
@@ -48,17 +77,98 @@ h4 {
 
 h5 {
 	font-size: 14px;
-	font-family: 'Source Code Pro'; font-weight: 300;
+	font-family: 'Montserrat', sans-serif;	
+	font-weight: 400;	
 	line-height: 18px;
 	letter-spacing: 0.9px;
-	color: red;
+	color: black;
 
 }
 
+h6 {
+	font-size: 10px;
+	font-family: 'Montserrat'; font-weight: 400;	
+	line-height: 12px;
+	letter-spacing: 0.8px;
+
+}
+
+
+
+.toggle-footnote::before{
+  content: "[";
+}
+.toggle-footnote::after{
+  content: "]";
+}
+
+.footnote{
+  display:none;
+}
+
+
+
+
+
+#wrapper{
+	height:100%;
+}
+
+.kliknav{
+	position: fixed;
+	font-family: 'Montserrat'; 
+	font-weight: 400;
+	top: 20px;
+	left: 20px;
+}
+
+
+
 .container {
+
 	position: absolute;
-	width: 45%;
-	left: 225px;
+	width: 40%;
+	left: 220px;
+	background-color: #7bffc5;
+	padding: 35px;
+	top: -40px;
+	box-shadow: inset 50px 60px 60px white;
+
+}
+
+.nav {
+
+	position: fixed;
+	top:80px;
+	width: 200px;
+	left: 20px;
+	background-color: white;
+	display: none;
+}
+
+.linksvak {
+	position: fixed;
+	width: 200px;
+	left: 15px;
+	bottom: 15px;
+	font-size: 14px;
+	font-family: 'Source Code Pro'; font-weight: 300;
+	line-height: 18px;
+	letter-spacing: 0.9px;
+	color: black;
+	display:none;
+}
+
+.rechtsvak {
+	position: fixed;
+	width: 420px;
+	right: 15px;
+	top: 15px;
+	background-color: blue;
+}
+
+img {
+	width: 100%;
 }
 
 .info {
@@ -69,20 +179,42 @@ h5 {
 
 }
 
-.outernote {
-	display: table;
-	position: fixed;
-	width: 90px;
-	left: 50px;
 
-}
 
 .innernote {
 	position: absolute;
-	margin-top: 30px;
-	margin-left: -175px;
-	width: 90px;
+	margin-top: 40px;
+	margin-left: -190px;
+	width: 150px;
 }
+
+
+.sticky-wrapper{
+	position: absolute;
+	opacity: 0;
+	width:420px;
+	min-height: 100%;
+	margin-left: 570px;
+}
+.sticky-wrapper.is-sticky{
+	opacity: 1;
+}
+.side-image{
+	position: absolute;
+/*	margin-right: -440px;
+	margin-top: 40px;
+*/
+	max-width: 420px;
+	margin-top: 20px;
+	/*box-shadow: 5px 5px 12px #7bffc5;*/
+	background: white;
+	padding-bottom:1000px;
+
+}
+
+
+
+
 
 
 Code van sep voor afbeeldingen inplaatsen:
