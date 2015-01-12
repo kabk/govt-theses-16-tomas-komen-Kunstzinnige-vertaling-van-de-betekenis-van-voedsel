@@ -123,6 +123,8 @@ h6 {
 	font-weight: 400;
 	top: 20px;
 	left: 20px;
+	cursor: hand;
+	cursor: pointer;
 }
 
 
@@ -154,8 +156,8 @@ h6 {
 	position: fixed;
 	width: 200px;
 	left: 15px;
-	bottom: 50px;
-	font-size: 13px;
+	bottom: 40px;
+	font-size: 12px;
 	font-family: 'Montserrat'; 
 	font-weight: 400;
 	line-height: 17px;
